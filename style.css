@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+}
+#logo{
+    margin: 24px 15px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky ;
+    top: 0px;
+    height: 100px;
+  
+} 
+#navbar ul{
+    display: flex;
+}
+#navbar::before{
+     content: "";
+     background-color: rgb(244, 232, 215);
+     position: absolute;
+     height: 70%;
+     width: 100%;
+      z-index: -1;
+}
+#navbar ul li{
+    list-style: none;
+    font-size: 1rem;
+}
+#navbar ul li a{
+    color: rgb(208, 48, 160);
+    text-decoration: none;
+    display: block; 
+    padding: 35px 12px;
+    border-radius: 20px;  
+    /* background-color: aqua; */
+    height: 2px;
+    margin: 13px;
+}
+#navbar ul li a:hover{
+    color: rgb(33, 29, 24);
+    
+}
+#container{
+    display: flex;
+    flex-direction: column;
+    padding: 87px 200px;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    font-size: large;
+    background: url("../pexels-ella-olsson-1640777.jpg") no-repeat center center/cover;
+}
+.btn{
+    background-color: bisque;
+    width: 82px;
+    border-radius: 23px;
+    margin: auto;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(148, 84, 84);
+}
+.h-primary{
+    font-size: 2.8rem;
+    padding: 23px 23px;
+    font-style: italic;
+
+}
+#container h1{
+    color: rgb(229, 196, 49);
+}
+#container p{
+    color: crimson;
+}
+
+/* services center */
+
+#services{
+    margin: 34px;
+    display: flex;
+
+}
+#services .box{
+    border: 2px solid gray;
+    padding: 34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background-color: rgb(237, 230, 220);
+}
+#services .box img{
+height: 100px;
+margin: auto;
+display: block;
+}
+
+.headabc{
+    font-size: 2.8rem;
+    padding: 23px 23px;
+    font-style: italic;
+    font-weight: bolder;
+    justify-content: center;
+    text-align: center;
+    
+}
+#service-container h1{
+    color: rgb(217, 186, 34);
+    padding: 23px 23px;
+    background-color: rgb(191, 78, 151);
+    opacity: 0.5;
+    border-radius: 23px;
+    width: 500px;
+   
+    margin: 23px auto;
+}
+.headx{
+    font-size: 2rem;
+    padding: 23px 23px;
+    font-style: italic;
+    font-weight: bolder;
+    justify-content: center;
+    text-align: center;
+}
+.box h2{
+    color: rgb(205, 187, 56);
+}
+
+#client-section{
+    height: 344px;
+}
+#client-section::before{
+content: "";
+position: absolute;
+background: url(../pexels-alexander-mils-2103949.jpg) no-repeat center center/cover;
+width: 100%;
+height: 40%;
+z-index: -1;
+opacity: 0.7;
+}
+.clients{
+display: flex;
+justify-content: center;
+text-align: center;
+}
+.clients img{
+height:  100px;
+padding: 23px 33px;
+}
+#client-section h1{
+    color: rgb(217, 186, 34);
+    padding: 23px 23px;
+    background-color: rgb(182, 121, 164);
+    opacity: 0.8;
+    border-radius: 23px;
+    width: 500px; 
+    margin: 23px auto;
+}
+
+
+#contact{
+    height: 380px;
+}
+#contact::before{
+    content: "";
+    background: url(../contact.jpg) no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    z-index: -1;
+    opacity: 0.8;
+
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 36px;
+    
+}
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+}
+
+
+
+footer{
+    background-color: black;
+    color: beige;     
+    margin: 23px 0px;  
+}
+
+html{
+    scroll-behavior: smooth;
+}
